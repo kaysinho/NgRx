@@ -1,0 +1,22 @@
+<div class="row text-center">
+  <div class="col">
+    <h1>Parent Counter</h1>
+    <h2>{{ counter }}</h2>
+  </div>
+</div>
+
+<div class="row text-center">
+  <div class="col">
+    <button class="btn btn-primary" (click)="increase()">Increase</button>
+    <button class="btn btn-info" (click)="decrease()">Decrease</button>
+
+  </div>
+</div>
+
+<hr>
+
+<div class="row text-center">
+  <div class="col">
+    <app-child></app-child>
+  </div>
+</div>

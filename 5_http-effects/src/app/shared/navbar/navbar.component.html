@@ -1,0 +1,26 @@
+
+
+
+<nav class="navbar navbar-expand-lg" style="color: #fff!important; background-color: RGBA(108,117,125,var(--bs-bg-opacity,1))!important;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="color: #fff!important;">Effects App</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+          <li class="nav-item">
+            <a class="nav-link" style="color: #fff!important;" routerLink="home" routerLinkActive="active" >Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: #fff!important;"  routerLink="user/1" routerLinkActive="active" >User</a>
+          </li>
+          
+        </ul>
+        <div class="d-flex" role="search">
+          <input #txtInput class="form-control me-2" (keyup.enter)="search(txtInput.value)" type="search" placeholder="Search" aria-label="Search">
+          <button (click)="search(txtInput.value)" class="btn btn-dark" type="button">Search</button>
+        </div>
+      </div>
+    </div>
+  </nav>

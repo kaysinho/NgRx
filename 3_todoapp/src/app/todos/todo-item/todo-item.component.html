@@ -1,0 +1,15 @@
+<li class="task" >
+    <label for="item-{{ todo.id }}" >
+      <input [formControl]="chkCompleted" type="checkbox" id="item-{{ todo.id }}" />
+      <p [ngClass]="{ 'completed' : todo.completed }">{{ todo.text }}</p>
+    </label>
+    <div class="settings">
+      <i onclick="showMenu(this)" class="uil uil-ellipsis-h"></i>
+      <ul class="task-menu">
+        <li onclick="editTask(item)"><i class="uil uil-pen"></i>Edit</li>
+        <li onclick="deleteTask(item)">
+          <i class="uil uil-trash"></i>Delete
+        </li>
+      </ul>
+    </div>
+  </li>

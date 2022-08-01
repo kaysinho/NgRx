@@ -1,0 +1,4 @@
+<div class="filters">
+    <span (click)="setFilter(f)" *ngFor="let f of filters" [ngClass]="{'active': f=== filter}" id="{{ f }}">{{ f }}</span>
+  </div>
+  <button class="clear-btn" (click)="clear()">Clear All</button>

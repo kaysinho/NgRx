@@ -1,0 +1,3 @@
+<ul class="task-box">
+    <app-todo-item *ngFor="let todo of todos | todoFilter: filter" [todo]="todo"></app-todo-item>
+  </ul>
